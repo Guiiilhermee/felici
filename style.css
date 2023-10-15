@@ -137,11 +137,12 @@
   footer p {
     margin: 0;
     text-align: center;
-    background-color: #fff;
+    background-color: rgb(228, 180, 92);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(34, 1, 1, 0.2);
+    color: black;
   }
   
   
