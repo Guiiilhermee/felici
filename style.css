@@ -1,147 +1,200 @@
 *{
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: rgb(228, 180, 92);
-}
-
-h1 {
-    text-align: center;
-
-}
-
-header {
-  background-color: black;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-}
-
-a:hover {
-  color: rgb(228, 180, 92);
-}
-
-/*header*/
-header {
-  position: relative;
-  padding: 0 2rem;
-}
-
-.navbar {
-  width: 100%;
-  height: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar .logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar .links {
-  display: flex;
-  gap: 2rem;
-}
-
-.navbar .toggle_btn {
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-/* inicio com foto e legenda */
-
-.container {
-  position: relative;
-  text-align: center; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
   
-}
-
-.container img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.container p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  bottom: 10%;
-}
-
-.legenda {
-  background-color: rgb(228, 180, 92);
-  border-radius: 15px;
-  position: absolute;
-  top: 10%;
-  left: 20%;
-  right: 20%;
-}
-
-.legenda p {
-  margin: 10px;
-  color: black;
-}
-
-/* fotos */
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
-  grid-gap: 20px;
-}
-
-.gallery img {
-  width: 100%; 
-}
-
-/*como chegar */
-
-.map {
-  text-align: center;
-  padding: 20px;
-}
-
-/* contato */
-
-footer {
-  background-color: #555;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-footer p {
-  margin: 0;
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(34, 1, 1, 0.2);
-}
-
-
-.direitos {
-  text-align: center;
-}
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: rgb(228, 180, 92);
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  h1 {
+      text-align: center;
+  
+  }
+  
+  header {
+    background-color: black;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  a:hover {
+    color: rgb(228, 180, 92);
+  }
+  
+  /*header*/
+  header {
+    position: relative;
+    padding: 0 2rem;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* inicio com foto e legenda */
+  
+  .container {
+    position: relative;
+    text-align: center; 
+    
+  }
+    
+  .container img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .container p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .legenda {
+    background-color: rgb(228, 180, 92);
+    border-radius: 15px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+  }
+  
+  .legenda p {
+    margin: 10px;
+    color: black;
+  
+  }
+  
+  /* fotos */
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
+    grid-gap: 20px;
+  }
+  
+  .gallery img {
+    width: 100%; 
+  }
+  
+  /*como chegar */
+  
+  .map {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* contato */
+  
+  footer {
+    background-color: #555;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer p {
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(34, 1, 1, 0.2);
+  }
+  
+  
+  .direitos {
+    text-align: center;
+  }
+  
+  
+  /* Add media queries for responsiveness */
+  
+  @media only screen and (max-width: 600px) {
+      /* Adjust styles for small screens */
+  
+      .navbar {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .logo {
+          margin-bottom: 10px;
+      }
+  
+      .links {
+          margin-top: 0px;
+      }
+  
+      .container p {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      bottom: 5%;
+      }
+  
+    .legenda {
+      top: 5%;
+      left: 10%;
+      right: 10%;
+    }
+  
+    .legenda p {
+      margin: 5%;
+      
+    }
+  
+      #fotos .gallery li {
+          width: 100%;
+          margin-bottom: 20px;
+      }
+  
+      #ComoChegar iframe {
+          width: 100%;
+      }
+  
+      #Contato .support {
+          text-align: center;
+      }
+  }
+  
