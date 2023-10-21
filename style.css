@@ -199,3 +199,25 @@
       }
   }
   
+
+  .social-midia {
+    text-align: center;
+}
+
+.social-midia li {
+    display: inline-block;
+    line-height: 100px;
+}
+
+.social-midia i {
+    font-size: 200%;
+    margin: 1%;
+    padding: 10%;
+    color: white;
+    background-color: rgb(1, 1, 1);
+}
+
+.social-midia a {
+    padding: 0 20px;
+
+}
